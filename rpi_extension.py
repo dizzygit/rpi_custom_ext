@@ -1,4 +1,4 @@
-import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO #z biblioteki pip install rpi-lgpio, standardowy RPi.GPIO nie działa
 import time
 import logging
 import os
