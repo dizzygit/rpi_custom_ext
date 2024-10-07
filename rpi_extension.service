@@ -1,0 +1,14 @@
+[Unit]
+Description=Rozszerzenia do RPI4 (dodatkowe przyciski i wyświetlacz)
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/dizzy/rpicustom/rpi_extension.py
+WorkingDirectory=/home/dizzy/rpicustom/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=dizzy
+
+[Install]
+WantedBy=multi-user.target
