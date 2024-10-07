@@ -1,0 +1,9 @@
+# Wyklucz katalog venv
+venv/
+
+# Wyklucz pliki logów
+*.log
+
+# Wyklucz pliki cache Pythona
+__pycache__/
+*.pyc
