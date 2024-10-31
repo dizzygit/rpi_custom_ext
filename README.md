@@ -12,10 +12,29 @@ This project monitors the temperature of a Raspberry Pi and displays it on a 1.3
 
 ## Requirements
 
-Before running the script, ensure you have the following requirements installed:
+1. Before running the script, ensure you have the following requirements installed:
 - Python 3.x
 - [Luma.OLED](https://pypi.org/project/luma.oled/) for OLED display support
 - [RPi.LGPIO](https://pypi.org/project/rpi-lgpio/) for GPIO pin control
+
+2. Check if the I2C Interface is Enabled: The I2C interface might be disabled by default on your Raspberry Pi. To enable it, run:
+
+   ```bash
+   sudo raspi-config
+   ```
+
+   Go to Interface Options.
+   Select I2C and set it to Enabled.
+
+3. Install Required Packages: If you haven't already, install the necessary packages to work with I2C:
+
+   ```bash
+   sudo apt update
+   sudo apt install -y i2c-tools python3-smbus
+   i2cdetect -y 1
+   ```
+   If you see the device address (like 0x3C) on the list, the device is correctly connected.
+
 
 ### Setting Up a Virtual Environment
 
