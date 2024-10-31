@@ -19,9 +19,10 @@ Before running the script, ensure you have the following requirements installed:
 
 ### Setting Up a Virtual Environment
 
-1. **Install `python3-venv` if not already installed:**
+1. **Install `python3-venv` and `python3-dev` if not already installed:**
    ```bash
    sudo apt install python3-venv
+   sudo apt install python3-dev
    ```
 
 2. **Create a virtual environment:**
