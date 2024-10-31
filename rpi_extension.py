@@ -16,7 +16,7 @@ import socket
 
 # Konfiguracja loggera
 logging.basicConfig(
-    filename='/home/dizzy/rpicustom/test.log',  # Ścieżka do pliku logów
+    filename='/home/dizzy/rpi_custom_ext/test.log',  # Ścieżka do pliku logów
     level=logging.INFO,               # Poziom logów
     format='%(asctime)s - %(levelname)s - %(message)s',  # Format logów
     datefmt='%Y-%m-%d %H:%M:%S'       # Format daty i czasu
